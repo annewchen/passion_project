@@ -1,2 +1,1 @@
-# passion_project
-never miss a movie release
+#Never miss another movie
