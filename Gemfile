@@ -10,6 +10,7 @@ gem 'thin'
 
 gem 'activesupport', "~>4.1"
 gem 'activerecord', "~>4.1"
+gem 'faker'
 
 gem 'rake'
 gem 'bcrypt-ruby'
