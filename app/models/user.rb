@@ -1,3 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :lists_movies
+  validates_presence_of :first_name, :last_name, :username, :email, :hashed_password
+
+  has_many :lists
 end

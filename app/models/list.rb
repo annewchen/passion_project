@@ -1,4 +1,5 @@
 class List < ActiveRecord::Base
-  has_many :lists_movies
-  has_many :movies, through: :lists_movies
+  validates_presence_of :title, :description, :user_id
+  has_many :movies
+  belongs_to :user
 end

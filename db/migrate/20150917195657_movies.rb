@@ -3,6 +3,7 @@ class Movies < ActiveRecord::Migration
     create_table(:movies) do |t|
       t.string :title
       t.date :release_date
+      t.references :list
 
     end
   end

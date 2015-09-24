@@ -1,4 +1,5 @@
 class Movie < ActiveRecord::Base
-  has_many :lists_movies
-  has_many :lists, through: :lists_movies
+  validates_presence_of :title, :release_date, :list_id
+
+  belongs_to :list
 end
