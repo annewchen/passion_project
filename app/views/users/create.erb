@@ -1,0 +1,15 @@
+<h3> Register </h3>
+
+<form method="POST" action="/users">
+
+  First Name: <input type="text" placeholder="First Name" name="user[first_name]"><br>
+  Last Name: <input type="text" placeholder="Last name" name="user[last_name]"><br>
+  Username: <input type="text" placeholder="Username" name="user[username]"><br>
+  Email: <input type="email" placeholder="Email" name="user[email]"><br>
+  Password: <input type="password" placeholder="Password" name="user[hashed_password]"><br>
+
+  <input type="submit" value="Register">
+
+</form>
+
+  <%= erb :"errors/_user_registration", layout: false, locals: {user: @user} %>
